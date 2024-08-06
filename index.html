@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="container">
+        <!-- ENCABEZADOS -->
+        <header>
+            <div class="encabezado1">
+                <div class="title">
+                    <img class="coraimg" src="./assets/img/heart-light.png" alt="corazoncito">
+                    <h1>Pet Shelter</h1>
+                </div>
+                <ul class="nav-links">
+                    <li>Find a Pet</li>
+                    <li>About</li>
+                    <li><button onclick="removeButton()" id="donateBtn">Donate </button></li>
+                </ul>
+            </div>
+            <div class="encabezado2">
+                <div class="selectortipo">
+                    <h4>I'm looking for a...</h4>
+                    <div class="icontex"> <img class="huellaimg" src="./assets/img/paw-light.png" alt="huellita">
+                        <select id="tipo" onchange="showAlert()">
+                            <option value="any">Any Pet </option>
+                            <option value="mini">Cat</option>
+                            <option value="big">Dog</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="buscador">
+                    <h4>in or near...</h4>
+                    <div class="icontex">
+                        <img class="pinubi" src="./assets/img/pin-light.png" alt="pin">
+                        <input type="text" placeholder="City or Zip Code" id="ub">
+                    </div>
+                </div>
+                <div class="purplebox">
+                    <h3>Find your new best friend</h3>
+                </div>
+            </div>
+        </header>
+        <!-- MAIN-->
+        <main>
+            <div class="perfiles">
+                <div class="tarjeta">
+                    <img class="imag-tarjeta" src="./assets/img/pepper.jpg" alt="peppito">
+                    <div class="descripcion">
+                        <h2>Pepper</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia praesentium quo rem</p>
+                    </div>
+                    <div class="contador">
+                        <p class="cont"><span id="countPepper">3</span> petting(s)</p>
+                        <button onclick="incrementarContador('countPepper')" class="btn">Pet Pepper</button>
+                    </div>
+                </div>
+                <div class="tarjeta">
+                    <img class="imag-tarjeta" src="./assets/img/bruce.jpg" alt="brucito">
+                    <div class="descripcion">
+                        <h2>Bruce</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia praesentium quo rem</p>
+                    </div>
+                    <div class="contador">
+                        <p class="cont"><span id="countBruce">3</span> petting(s)</p>
+                        <button onclick="incrementarContador('countBruce')" class="btn">Pet Bruce</button>
+                    </div>
+                </div>
+                <div class="tarjeta">
+                    <img class="imag-tarjeta" src="./assets/img/oscar.jpg" alt="oscarito">
+                    <div class="descripcion">
+                        <h2>Oscar</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia praesentium quo rem</p>
+                    </div>
+                    <div class="contador">
+                        <p class="cont"><span id="countOscar">3</span> petting(s)</p>
+                        <button onclick="incrementarContador('countOscar')" class="btn">Pet Oscar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
